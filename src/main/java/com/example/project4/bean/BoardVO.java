@@ -1,9 +1,10 @@
-package com.example.project4;
+package com.example.project4.bean;
 
 import java.util.Date;
 
 public class BoardVO {
 	private int seq;
+	private String category;
 	private String title;
 	private String writer;
 	private String content;
@@ -15,6 +16,12 @@ public class BoardVO {
 	}
 	public void setSeq(int seq) {
 		this.seq = seq;
+	}
+	public String getCategory() {
+		return category;
+	}
+	public void setCategory(String category) {
+		this.category = category;
 	}
 	public String getTitle() {
 		return title;
