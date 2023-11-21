@@ -86,7 +86,9 @@ public class BoardDAO {
 				one.setTitle(rs.getString("title"));
 				one.setWriter(rs.getString("writer"));
 				one.setContent(rs.getString("content"));
+				one.setRegdate(rs.getDate("regdate"));
 				one.setCnt(rs.getInt("cnt"));
+				one.setEditdate(rs.getDate("editdate"));
 			}
 			rs.close();
 		} catch (Exception e) {
